@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Porfiriato | 1876–1911</title>
+<style>
+:root{
+  --paper:#f3e5c8;--paper2:#e8d3aa;--ink:#302316;--muted:#70583b;
+  --rust:#8e422b;--gold:#b58a4d;--line:#c4a878;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);
+  background:
+    radial-gradient(ellipse at 15% 10%,#fff8e7 0,transparent 35%),
+    repeating-linear-gradient(0deg,rgba(95,65,30,.025) 0 1px,transparent 1px 4px),
+    var(--paper);
+  font-family:Georgia,"Times New Roman",serif;line-height:1.6;
+}
+header{
+  min-height:390px;padding:70px 22px 55px;text-align:center;position:relative;
+  background:linear-gradient(135deg,rgba(48,35,22,.91),rgba(104,57,35,.88)),
+    url("imagenesdeproyectos/porfiriato1.jpeg") center 35%/cover no-repeat;
+  color:#f8e9c9;border-bottom:8px double var(--gold);
+}
+header:before,header:after{content:"✦";position:absolute;color:#d8b77e;font-size:34px;top:28px}
+header:before{left:7%}header:after{right:7%}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;font-size:.85rem;color:#e3c895}
+h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.98;margin:20px 0 10px;text-transform:uppercase;text-shadow:3px 4px 0 #24180f}
+header p{font-size:1.2rem;margin:15px auto;max-width:650px;color:#f2dfbd}
+.date{display:inline-block;border-top:1px solid #d8b77e;border-bottom:1px solid #d8b77e;padding:8px 24px;letter-spacing:4px}
+nav{position:sticky;top:0;z-index:5;background:#302316;padding:12px 10px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;box-shadow:0 4px 12px #0003}
+nav a{color:#f5e5c4;text-decoration:none;font-size:.92rem;padding:5px 10px;border:1px solid transparent}
+nav a:hover{border-color:#c8a66c;color:#fff}
+main{max-width:1100px;margin:auto;padding:35px 20px 60px}
+.intro{max-width:850px;margin:0 auto 42px;text-align:center;font-size:1.15rem}
+.intro strong{color:var(--rust)}
+.section-title{text-align:center;font-size:2.2rem;margin:45px 0 25px;color:var(--rust)}
+.section-title:after{content:"";display:block;width:100px;border-bottom:3px double var(--gold);margin:10px auto}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{
+  background:rgba(255,250,237,.68);border:1px solid var(--line);
+  box-shadow:5px 6px 0 rgba(105,75,39,.12);padding:25px 26px;position:relative;
+}
+.card:before{content:"";position:absolute;inset:7px;border:1px solid rgba(181,138,77,.35);pointer-events:none}
+.card h3{font-size:1.45rem;color:var(--rust);margin:0 0 10px;position:relative}
+.card p{margin:0;position:relative}
+.number{font-size:.8rem;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.card-image{width:100%;height:220px;object-fit:cover;border:4px solid #d2bb8d;margin:12px 0 16px;display:block;box-shadow:3px 4px 0 rgba(65,43,24,.16)}
+.fact{margin-top:35px;background:#3b2a1c;color:#f7e8c9;padding:28px;text-align:center;border-top:5px double var(--gold);border-bottom:5px double var(--gold)}
+.fact h2{margin:0 0 8px;color:#e5c58d}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.event{padding:18px;background:#ead8b5;border-left:4px solid var(--rust)}
+.event strong{display:block;font-size:1.5rem;color:var(--rust)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.gallery figure{margin:0;background:#ead8b5;border:1px solid var(--line);padding:8px}
+.gallery img{width:100%;height:220px;object-fit:cover;display:block}
+.gallery figure:nth-child(2) img{object-position:center 25%}
+.gallery figcaption{text-align:center;font-size:.9rem;padding:8px 4px 2px;color:var(--muted)}
+footer{text-align:center;background:#302316;color:#e8d6b4;padding:28px 15px}
+footer small{opacity:.8}
+@media(max-width:700px){
+ header{min-height:320px;padding-top:55px}
+ .grid{grid-template-columns:1fr}
+ .timeline{grid-template-columns:repeat(2,1fr)}
+ .gallery{grid-template-columns:1fr 1fr}
+ nav{gap:2px}nav a{font-size:.8rem;padding:5px}
+}
+@media(max-width:420px){.timeline{grid-template-columns:1fr}.card{padding:22px}.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header id="inicio">
+  <div class="eyebrow">Una etapa de la historia de México</div>
+  <h1>El Porfiriato</h1>
+  <div class="date">1876 — 1911</div>
+  <p>Modernización, desigualdad y el camino hacia la Revolución mexicana.</p>
+</header>
+
+<nav aria-label="Navegación principal">
+  <a href="#diaz">Porfirio Díaz</a>
+  <a href="#avances">Avances</a>
+  <a href="#trabajadores">Trabajadores</a>
+  <a href="#revolucion">Revolución</a>
+  <a href="#cultura">Cultura</a>
+  <a href="#huelgas">Huelgas</a>
+  <a href="#tiempo">Línea del tiempo</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <p>El <strong>Porfiriato</strong> fue un periodo de la historia de México en el que Porfirio Díaz mantuvo una gran influencia en el gobierno. El país tuvo cambios importantes en su economía e infraestructura, pero también vivió desigualdad social y falta de democracia.</p>
+  </section>
+
+  <h2 class="section-title">Seis aspectos del Porfiriato</h2>
+  <section class="grid">
+    <article class="card" id="diaz">
+      <div class="number">01 · El personaje</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato1.jpeg" alt="Porfirio Díaz">
+      <h3>¿Quién fue Porfirio Díaz?</h3>
+      <p>Fue un militar y político que gobernó México durante gran parte de 1876 a 1911. Su gobierno se caracterizó por la modernización del país y la falta de democracia.</p>
+    </article>
+    <article class="card" id="avances">
+      <div class="number">02 · Modernización</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato3.jpeg" alt="Avances e infraestructura del Porfiriato">
+      <h3>Avances tecnológicos</h3>
+      <p>Durante su gobierno crecieron los ferrocarriles, la electricidad, los teléfonos y las industrias, impulsando el comercio y el transporte.</p>
+    </article>
+    <article class="card" id="trabajadores">
+      <div class="number">03 · Sociedad</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato2.jpeg" alt="Vida social durante el Porfiriato">
+      <h3>La vida de los trabajadores</h3>
+      <p>Muchos campesinos y obreros sufrían bajos salarios, largas jornadas laborales y malas condiciones de trabajo.</p>
+    </article>
+    <article class="card" id="revolucion">
+      <div class="number">04 · Cambio político</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato5.jpeg" alt="La Revolución mexicana">
+      <h3>Revolución mexicana</h3>
+      <p>En 1910 comenzó la Revolución mexicana, impulsada por el descontento social y la oposición a la reelección de Porfirio Díaz.</p>
+    </article>
+    <article class="card" id="cultura">
+      <div class="number">05 · Arte y sociedad</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato6.jpeg" alt="Cultura y arquitectura del Porfiriato">
+      <h3>Cultura y arquitectura</h3>
+      <p>La cultura recibió influencia francesa y europea. Se construyeron edificios importantes y se impulsaron las artes y la educación.</p>
+    </article>
+    <article class="card" id="huelgas">
+      <div class="number">06 · Protestas obreras</div>
+      <img class="card-image" src="imagenesdeproyectos/porfiriato5.jpeg" alt="Huelgas obreras del Porfiriato">
+      <h3>Huelgas de Cananea y Río Blanco</h3>
+      <p>En 1906 y 1907, los trabajadores realizaron huelgas para exigir mejores salarios y condiciones laborales. Ambas fueron reprimidas.</p>
+    </article>
+  </section>
+
+  <section class="fact">
+    <h2>Un periodo de contrastes</h2>
+    <p>Mientras México avanzaba en infraestructura e industria, gran parte de la población seguía enfrentando pobreza, explotación y pocas oportunidades para participar en la política.</p>
+  </section>
+
+  <section aria-labelledby="galeria-titulo">
+    <h2 class="section-title" id="galeria-titulo">Galería histórica</h2>
+    <div class="gallery">
+      <figure><img src="imagenesdeproyectos/porfiriato1.jpeg" alt="Imagen histórica del Porfiriato 1"><figcaption>Porfiriato 1</figcaption></figure>
+      <figure><img src="imagenesdeproyectos/porfiriato2.jpeg" alt="Imagen histórica del Porfiriato 2"><figcaption>Porfiriato 2</figcaption></figure>
+      <figure><img src="imagenesdeproyectos/porfiriato3.jpeg" alt="Imagen histórica del Porfiriato 3"><figcaption>Porfiriato 3</figcaption></figure>
+      <figure><img src="imagenesdeproyectos/porfiriato5.jpeg" alt="Imagen histórica del Porfiriato 5"><figcaption>Porfiriato 5</figcaption></figure>
+      <figure><img src="imagenesdeproyectos/porfiriato6.jpeg" alt="Imagen histórica del Porfiriato 6"><figcaption>Porfiriato 6</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="tiempo">
+    <h2 class="section-title">Línea del tiempo</h2>
+    <div class="timeline">
+      <div class="event"><strong>1876</strong>Porfirio Díaz llega al poder.</div>
+      <div class="event"><strong>1884</strong>Díaz regresa a la presidencia.</div>
+      <div class="event"><strong>1906</strong>Huelga de Cananea.</div>
+      <div class="event"><strong>1907</strong>Huelga de Río Blanco.</div>
+      <div class="event"><strong>1910</strong>Inicia la Revolución mexicana.</div>
+      <div class="event"><strong>1911</strong>Termina el gobierno de Porfirio Díaz.</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>EL PORFIRIATO · 1876–1911</p>
+  <small>Periódico histórico escolar · México</small>
+</footer>
+</body>
+</html>
